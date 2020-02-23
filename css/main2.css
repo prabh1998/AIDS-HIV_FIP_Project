@@ -1,0 +1,48 @@
+
+/*# sourceMappingURL=main2.css.map */
+/*css*/
+body{margin: 0; padding: 0;}
+ 
+.active{color: blueviolet;}
+.fade-enter-active, .fade-leave-active {
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+}
+
+
+/*header-----------------*/
+#routerNav{}
+
+
+/*footer-----------------*/
+#footerArea{margin-top: 100px;}
+#footerArea{color:gray;height: 100px;background-color:skyblue;
+font-size: 18px; }
+#socialIcon li img {width: 40px;margin-right: 5px;}
+#socialIcon li{display: inline;}
+#socialIcon li img:hover{opacity: 0.3;}
+#socialIcon li p{font-size: 18px;}
+
+#footerInfo{padding-top: 20px;}
+.copy{padding-top: 10px;}
+
+/*home-----------------*/
+
+#homeImg{position: relative; margin-bottom: 100px;}
+#homeP{position:absolute;top: 300px;left:150px;}
+
+
+
+
+/*blog-----------------*/
+.card{margin-bottom: 30px;}
+.bTitle{text-align: center;}
+#signupArea{margin-top: 100px;}
+
+
+/*# sourceMappingURL=main2.css.map */

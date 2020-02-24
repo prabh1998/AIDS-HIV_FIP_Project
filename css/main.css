@@ -1,330 +1,48 @@
-body {
-  width: 500px;
-  text-align: center;
-  margin: 0 auto;
-}
-body .hidden {
-  display: none;
-}
-body * {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  font-size: 13px;
-  list-style-type: none;
-}
-body #homeImg {
-  display: flex;
-  width: 500px;
-  background-color: #0e74c2;
-}
-body #homeImg img {
-  width: 340px;
-  height: auto;
-}
-body #homeP h2 {
-  color: #f0fbfe;
-  font-size: 36px;
-}
-body #homeP p {
-  font-size: 20px;
-  color: #e1eded;
-  margin-left: 160px;
-  border: 2px solid #dcaa07;
-  width: 100px;
-  margin-top: 10px;
-}
-body #hometext {
-  width: 500px;
-  height: 200px;
-  border: 2px solid #fae671;
-  margin-top: -80px;
-}
-body #hometext p {
-  font-size: 16px;
-  color: darkslategrey;
-  margin-top: 10px;
-  margin-left: 6px;
-}
-body #logopart {
-  width: 500px;
-  height: 100px;
-  display: inline-block;
-  border-bottom: 3px solid skyblue;
-}
-body #logopart img {
-  width: 60px;
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-left: 75px;
-}
-body #logopart p {
-  font-size: 20px;
-  color: #e0ac67;
-  display: inline-block;
-  margin-left: 30px;
-  margin-top: 0px;
-  font-family: "Sriracha", cursive;
-}
-body #routerNav {
-  width: 450px;
-  height: 80px;
-  margin-top: 30px;
-  text-align: center;
-  background-color: white;
-  margin-left: 0px;
-}
-body #routerNav li {
-  margin-left: 0px;
-}
-body #routerNav li a {
-  font-size: 16px;
-  color: #3292cd;
-  margin-left: 30px;
-  font-family: "Varela Round", sans-serif;
-}
-body #routerNav li button {
-  font-size: 16px;
-  color: #3292cd;
-  margin-left: 30px;
-}
-body #videopart {
-  width: 450px;
-  text-align: center;
-  margin: 0 px;
-}
-body #videopart video {
-  width: 450px;
-  height: auto;
-}
-body #videopart h2 {
-  width: 450px;
-  height: 50px;
-  text-align: center;
-  margin-top: 30px;
-  color: #2c43a0;
-  font-family: "Sriracha", cursive;
-}
-body #videopart ul {
-  width: 450px;
-  text-align: center;
-  margin: 0 auto;
-}
-body #videopart ul li {
-  font-size: 16px;
-  color: #003082;
-  margin-top: 20px;
-  font-family: "Varela Round", sans-serif;
-}
-body #videopart img {
-  width: 470px;
-  height: auto;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-body #videopart p {
-  font-size: 16px;
-  color: #003082;
-  margin-top: 20px;
-  text-align: left;
-  margin-left: 10px;
-  font-family: "Varela Round", sans-serif;
-}
-body #ontraio {
-  display: inline;
-}
-body #ontraio h3 {
-  color: #1b84bd;
-  margin-top: 36px;
-  font-size: 22px;
-  text-align: center;
-  font-family: "Sriracha", cursive;
-}
-body #ontraio img {
-  width: 460px;
-  height: auto;
-  margin-top: 0px;
-  border: 5px solid skyblue;
-}
-body #ontraio p {
-  width: 430px;
-  margin-top: 10px;
-  text-align: center;
-  margin-left: 17px;
-  font-size: 14px;
-  color: #454545;
-  font-family: "Saira", sans-serif;
+/*css*/
+body{margin: 0; padding: 0;}
+ 
+.active{color: red;}
+.fade-enter-active, .fade-leave-active {
+    transition-duration: 0.6s;
+    transition-property: opacity;
+    transition-timing-function: ease;
 }
 
-@media screen and (min-width: 750px) {
-  body {
-    width: 960px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  body .hidden {
-    display: none;
-  }
-  body * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: 13px;
-    list-style-type: none;
-  }
-  body #homeImg {
-    display: flex;
-    width: 900px;
-    background-color: #000000;
-  }
-  body #homeImg img {
-    width: 700px;
-    height: auto;
-  }
-  body #homeP h2 {
-    color: white;
-    font-size: 36px;
-    margin-left: 330px;
-    margin-top: 120px;
-  }
-  body #homeP p {
-    font-size: 20px;
-    color: #e1eded;
-    margin-left: 520px;
-    border: 2px solid #dcaa07;
-    width: 100px;
-    margin-top: 30px;
-  }
-  body #hometext {
-    width: 900px;
-    height: 200px;
-    border: 2px solid #fae671;
-    margin-top: -80px;
-  }
-  body #hometext p {
-    font-size: 22px;
-    color: darkslategrey;
-    margin-top: 10px;
-    margin-left: 6px;
-  }
-  body #logopart {
-    width: 960px;
-    height: 160px;
-    display: inline-block;
-    border-bottom: 3px solid skyblue;
-  }
-  body #logopart img {
-    width: 100px;
-    display: inline-block;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-left: 75px;
-  }
-  body #logopart p {
-    font-size: 30px;
-    color: #75cef2;
-    display: inline-block;
-    margin-left: 120px;
-    margin-top: 0px;
-    font-family: "Sriracha", cursive;
-  }
-  body #routerNav {
-    width: 880px;
-    height: 80px;
-    margin-top: 30px;
-    text-align: center;
-    background-color: white;
-    margin-left: 0px;
-  }
-  body #routerNav li {
-    margin-left: 0px;
-  }
-  body #routerNav li a {
-    font-size: 16px;
-    color: #f7b817;
-    margin-left: 30px;
-    font-family: "Varela Round", sans-serif;
-  }
-  body #routerNav li button {
-    font-size: 16px;
-    color: #f7b817;
-    margin-left: 30px;
-  }
-  body #videopart {
-    width: 960px;
-    text-align: center;
-    margin: 0 px;
-  }
-  body #videopart video {
-    width: 700px;
-    height: auto;
-  }
-  body #videopart h2 {
-    width: 960px;
-    height: 50px;
-    text-align: center;
-    margin-top: 30px;
-    color: #2b2b2b;
-    font-family: "Sriracha", cursive;
-  }
-  body #videopart ul {
-    width: 850px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  body #videopart ul li {
-    font-size: 20px;
-    color: #0f0f10;
-    margin-top: 20px;
-    font-family: "Varela Round", sans-serif;
-  }
-  body #videopart img {
-    width: 800px;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  body #videopart p {
-    width: 800px;
-    font-size: 19px;
-    color: #003082;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    font-family: "Varela Round", sans-serif;
-  }
-  body #ontraio {
-    display: flex;
-    flex-direction: initial;
-    width: 960;
-  }
-  body #ontraio h3 {
-    color: #1b84bd;
-    margin-top: 30px;
-    font-size: 30px;
-    text-align: center;
-    font-family: "Sriracha", cursive;
-    margin-left: 60px;
-  }
-  body #ontraio img {
-    width: 360px;
-    height: auto;
-    margin-top: 0px;
-    border: 5px solid skyblue;
-    margin-left: 70px;
-  }
-  body #ontraio p {
-    width: 360px;
-    margin-top: 10px;
-    text-align: center;
-    margin-left: 70px;
-    font-size: 14px;
-    color: #454545;
-    height: 280px;
-  }
+.fade-enter, .fade-leave-active {
+    opacity: 0;
 }
 
-/*# sourceMappingURL=main.css.map */
+
+/*header-----------------*/
+#routerNav{}
+
+
+/*footer-----------------*/
+#footerArea{margin-top: 100px;}
+#footerArea{color:white;height: 100px;background-color:#202945; }
+#socialIcon li img {width: 40px;margin-right: 5px;}
+#socialIcon li{display: inline;}
+#socialIcon li img:hover{opacity: 0.4;}
+
+#footerInfo{padding-top: 20px;}
+.copy{padding-top: 10px;}
+
+/*home-----------------*/
+
+#homeImg{position: relative; margin-bottom: 100px;}
+#homeP{position:absolute;top: 300px;left:150px;}
+
+#mapText{line-height: 40px; font-size: 20px;}
+.display-4 ,.lead{color: white;}
+/*#mapTextB{margin-top: 100px;}*/
+/*video-----------------*/
+#videotitle{color: #7d7d7d ;}
+
+
+/*blog-----------------*/
+.card{margin-bottom: 30px;}
+.sTitle{text-align:center;font-size:18px;color: #7d7d7d;}
+.bTitle{text-align: center;}
+#signupArea{margin-top: 100px;}
+
+

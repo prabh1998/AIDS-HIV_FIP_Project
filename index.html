@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/main2.css" />
-    <title>HPV</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous"/>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
-  </head>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>HIV project</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
+</head>
 
-  <body>
-    <main>
-        <div id="app" class="container-fluid">
-        <div id="logopart"><a href="index.html#/home">
-          <img src="images/logo.jpeg"  alt="logo"></a>
-          </a>
-        </div>
-          
-          <div id="routerNav">
-                  <li>
-                      <a tag="button" class="btn btn-light" href="home.html">Home</a>
-                      <a tag="button" class="btn btn-light" href="spots.html">About</a>
-                      <router-link to="/signup" tag="button" class="btn btn-light">Contact</router-link> 
-                  </li>
-           
-          </div>
 
-        <transition name="fadein" mode="out-in">
-          <router-view></router-view>
-        </transition>
-    <div id="videopart">
-        <video width="320" height="240" controls>
-        <source src="video/midterm_video.mp4" type="video/mp4">
-        <source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg">
-        </video>
-    
-        <h2>Welcome to the  HIV</h2>  
-        <p>We are community-inspired and dedicated to positively impacting the lives of individuals and diverse communities living with, at-risk for, or affected by HIV/AIDS and Hepatitis C (HCV). 
+<body>
+<main>
+<div id="app" class="container-fluid">
+<!-- router-view 是一个全局组件 可以直接使用 -->
 
-          Regional HIV/AIDS Connection (RHAC) serves the counties of Perth, Huron, Elgin, Lambton, Middlesex, and Oxford. 
-         Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV. We also work with anyone who provides services to people with, or at risk for, HIV and HCV. All services are free and confidential. </p>  
 
-            <img src="images/video1.jpg" alt="">
-                </ul>
-        </div>
 
-        <div id="footerArea">
-        <div class="container" id="footerInfo">
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.html#/home">
+
+   <!--  HIV&AIDS -->
+  </a>
+
+  <div id="routerNav">
+<router-link to='/home'  tag='button' class="btn btn-light">Home</router-link>
+<router-link to='/signup' tag='button' class="btn btn-light">Sign Up</router-link>
+<router-link to='/video' tag='button' class="btn btn-light">Video</router-link>
+<router-link to='/about' tag='button' class="btn btn-light">about</router-link>
+	
+</div>
+</nav>
+
+
+
+
+<transition name="fade" mode="out-in">
+	<router-view></router-view>
+</transition>
+	
+
+	
+	<div id="footerArea">
+
+		<div class="container" id="footerInfo">
         <div class="row">
-        <div class="col">
-        <p>@CopyRight 2020 HPV&AIDS, Inc</p>
-        </div>
-              <div class="col">
-                <ul id="socialIcon" class="float-right">
-                  Follow us on social media.
-                  <li><img src="images/twitter-circular-button.svg" /></li>
-                  <li><img src="images/facebook-circular-logo.svg" /></li>
-                  <li><img src="images/google-plus-circular-button.svg" /></li>
-                </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </main>
 
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  	 <div class="col">
+     
+		<p class="copy">
+        &copy; 2020 HIV&AIDS website, Inc
+        </p>
+    </div>
+
+    <div class="col">
+          <ul id="socialIcon" class="float-right">
+      Follow us on social media.
+      put icons here
+			<li>  </li>
+			<li>  </li>
+		  <li>  </li>
+			</ul>
+    </div>
+
+       </div></div>
+
+		
+		
+		
+	</div>	
+	
+</div>
+	
+
+</main>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

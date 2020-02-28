@@ -19,8 +19,8 @@ body{margin: 0; padding: 0;}
 
 /*footer-----------------*/
 #footerArea{margin-top: 100px;}
-#footerArea{color:white;height: 100px;background-color:#214769; }
-#socialIcon li img {width: 40px;margin-right: 5px;}
+#footerArea{color:white;height: 160px;background-color:#a8bdce; }
+#socialIcon li img {width: 70px;margin-right: 5px;}
 #socialIcon li{display: inline;}
 #socialIcon li img:hover{opacity: 0.4;}
 
@@ -29,12 +29,13 @@ body{margin: 0; padding: 0;}
 
 /*home-----------------*/
 
-#homeImg{position: relative; margin-bottom: 100px;}
-#homeP{position:absolute;top: 100px;left:0px;}
-#homeP{background-color: rgb(21, 89, 192); width: 600px; height: 100px;}
-#mapTextB{top:100px; left:0px;}
+#homeImg{position: relative; margin-bottom: 100px;left:140px;top:100px;}
+#homeP{position:absolute;top: 600px;left:760px;}
+#homeP{color:white; width: 700px; height: 160px;}
+#mapTextB{top:100px; left:-13px; background-color: #a8bdce;}
 .container{
     top:200px;
+    font-size:18px;
 }
 
 

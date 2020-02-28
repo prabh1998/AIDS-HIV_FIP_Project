@@ -7,7 +7,7 @@
     <div class="row">
     <div class="col">
     
-   
+    <img src="images/hand.jpeg" style="width:400px"></div>
           </div>
 <div class="col"> 
         <form action="admin/signned_up_page.php"  method="post">
@@ -57,11 +57,12 @@
     let homecomponent = {template:`<div>
         
         <div id="homeImg">
-      
+        <img src="images/hand.jpeg" style="width: 1100px" >
         </div>
 
        <div id="homeP"> 
-      <h2  class="display-4">HIV&AIDS</h2>
+      <h2  class="display-4">Be aware, Stay safe</h2>
+      <h2  class="display-4">Say ”NO”  to AIDs</h2>
       <hr class="my-4">
         <p class="lead"></p>
        
@@ -73,20 +74,38 @@
 
  <div class="col" id="mapTextB">
 
-        <h3>WHAT WE DO</h3>
+        <h3>Welcome to Our Website</h3>
+        <img src="images/logo.svg" style="width: 200px" >
+        <br>
         <p id="mapText">We are community-inspired and dedicated to positively impacting the lives of individuals and diverse communities living with, at-risk for, or affected by HIV/AIDS and Hepatitis C (HCV). 
+        </p><br>Regional HIV/AIDS Connection (RHAC) serves the counties of Perth, Huron, Elgin, Lambton, Middlesex, and Oxford. 
+        Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV. We also work with anyone who provides services to people with, or at risk for, HIV and HCV. All services are free and confidential. </div>
 
-        Regional HIV/AIDS Connection (RHAC) serves the counties of Perth, Huron, Elgin, Lambton, Middlesex, and Oxford.</p></div>
+</div></div><br><br>
 
-</div></div>
-
+<div class="container1" >
+  <div class="row">
+ <div class="col">
+            <div class="col" id="mapTextB">
+          <h3>Community Programs</h3>  <p>HIV Programs and Services
+            PHA & Hep C Activities
+            Needle and Syringe Program
+            Safe Needle Disposal
+            Carepoint Consumption 
+            Open Closet</p>
+            
+          </div><br><br><br><br>
+          <div class="col" id="videoPart" style="height: 250px">
+          <h3>put video here</h3><br><br> 
+          </div><br><br>
+          <h3 style="background-color:#a8bdce">TOPICS WE CAN SPEAK ABOUT:
+          HIV/AIDS Basics.
+          Hepatitis C Basics
+          Harm Reduction</h3><br>
+          <h3>
  
     <br><br>
     
-
-  <div class="container">
-  <div class="row">
-  <div class="col">
 
 
    

@@ -57,12 +57,10 @@
     let homecomponent = {template:`<div>
         
         <div id="homeImg">
-        <img src="images/hand.jpeg" style="width: 1100px" >
+        <img src="images/home1.jpg" style="width: 1100px" >
         </div>
 
        <div id="homeP"> 
-      <h2  class="display-4">Be aware, Stay safe</h2>
-      <h2  class="display-4">Say ”NO”  to AIDs</h2>
       <hr class="my-4">
         <p class="lead"></p>
        
@@ -74,12 +72,13 @@
 
  <div class="col" id="mapTextB">
 
-        <h3>Welcome to Our Website</h3>
+        <h3>HIV and Youth</h3>
         <img src="images/logo.svg" style="width: 200px" >
         <br>
-        <p id="mapText">We are community-inspired and dedicated to positively impacting the lives of individuals and diverse communities living with, at-risk for, or affected by HIV/AIDS and Hepatitis C (HCV). 
-        </p><br>Regional HIV/AIDS Connection (RHAC) serves the counties of Perth, Huron, Elgin, Lambton, Middlesex, and Oxford. 
-        Our service users include people living with HIV/AIDS and HCV, their partners/family/friends, as well as those concerned about HIV/AIDS and HCV or at risk for HIV. We also work with anyone who provides services to people with, or at risk for, HIV and HCV. All services are free and confidential. </div>
+        <p id="mapText">Currently, over 30% of all new HIV infections globally are estimated to occur among youth ages 15 to 25 years. Also, increasingly, children infected at birth grow into adolescents who have to deal with their HIV positive status. Combining the two, there are 5 million youth living with HIV.
+      <p>
+      <p id="mapText">Young people’s risk of becoming newly infected with HIV is closely correlated with age of sexual debut. Abstinence from sexual intercourse and delayed initiation of sexual behaviour are among the central aims of HIV prevention efforts for young people. Decreasing the number of sexual partners and increasing access to, and utilization of comprehensive prevention services, including prevention education and increasing access to condoms are essential for young people who are sexually active.</p>
+        </div>
 
 </div></div><br><br>
 
@@ -87,22 +86,54 @@
   <div class="row">
  <div class="col">
             <div class="col" id="mapTextB">
-          <h3>Community Programs</h3>  <p>HIV Programs and Services
-            PHA & Hep C Activities
-            Needle and Syringe Program
-            Safe Needle Disposal
-            Carepoint Consumption 
+          <h3>Community Programs</h3>  <p>HIV Programs and Services<br>
+            PHA & Hep C Activities<br>
+            Needle and Syringe Program<br>
+            Safe Needle Disposal<br>
+            Carepoint Consumption<br>
             Open Closet</p>
+            <div class="whitebar" style="height:20px"></div>
+            <br>
+            <p>TOPICS WE CAN SPEAK ABOUT:<br>
+            HIV/AIDS Basics.<br>
+            Hepatitis C Basics<br>
+            Harm Reduction</p>
+            <div class="whitebar" style="height:20px"></div>
+            <h3>Events Calendar</h3>
+            <p>Couch Crew<br>
+            Coffee Drop-In<br>
+            PrEP Clinic<br>
+            Opening Celebration</p>
+            <h3>Call Today</h3>
+            <p>9:00AM to 5:00PM<br>
+            1.866.920.1601<br>
+            Monday to Friday</p>
+            <div class="whitebar" style="height:20px"></div>
+            <div class="whitebar" style="height:20px"></div>
+
+            <div id="volunpart">
+            <h2>OUR VISION - Volunteer</h2>
+            <img src="images/v1.jpg" style="width: 900px">
+            <h3>VOICE</h3><br>
+            <p>This work gives voice to both the individuals with HIV/AIDS and Hepatitis C (HCV) who are challenged, as well as to the groups and the communities working actively to improve the quality of life and opportunities for those living with or affected by HIV/AIDS and Hepatitis C (HCV).</p>
+            <br><h3>HOME</h3><br>
+            <p>RHAC provides a home for people who are living with HIV/AIDS and Hepatitis C (HCV). Home reflects the residential services through the John Gordon Home, which is a Home with a Heart, a special place for people who receive one year of supports in order to stabilize their lives.</p>
+            <br><h3>KNOWLEDGE</h3><br>
+            <P>Knowledge both educates individuals on the risks that people need to be aware of and the actions they need to take to reduce their potential to contract HIV/AIDS and Hepatitis C (HCV), as well as to source and apply practices.</p>
+            </div>
+
+            
             
           </div><br><br><br><br>
-          <div class="col" id="videoPart" style="height: 250px">
+          <div class="col" id="videoPart" style="height: 350px">
           <h3>put video here</h3><br><br> 
           </div><br><br>
-          <h3 style="background-color:#a8bdce">TOPICS WE CAN SPEAK ABOUT:
-          HIV/AIDS Basics.
-          Hepatitis C Basics
-          Harm Reduction</h3><br>
-          <h3>
+          <div id="iconp">
+          <img src="images/icon.jpg" style="width: 200px" >
+          <img src="images/icon1.png" style="width: 200px" >
+          <img src="images/icon2.png" style="width: 200px" >
+          <img src="images/icon3.png" style="width: 200px" >
+          </div>
  
     <br><br>
     
@@ -113,35 +144,85 @@
 
 
 
-    let aboutcomponent = {template:`<div>
+    let communitycomponent = {template:`<div>
+      <img  >
+      <div id="com1p" style="height:400px">
+<br><br><h2 class="bTitle">WHAT IS HIV/AIDS?</h2>
+<div class="redbar" style="height:20px"><div>
+       <p>HIV stands for human immunodeficiency virus - a virus that weakens the immune system. The immune systems of people living with HIV may not allow them to fight off infections as well as people who do not have HIV (who are HIV negative).
+       AIDS stands for acquired immune deficiency syndrome - an advanced form of the disease caused by HIV. Not all people living with HIV will develop AIDS.
+       HIV is mainly spread by having unprotected anal or vaginal sex (intercourse) or by sharing needles.
+       Currently, there is no vaccine and no cure for HIV/AIDS.
+       There are five bodily fluids that can have enough HIV to transmit the virus:
+       <br><br>
+       Blood<br>
+       Semen<br>
+       Anal fluids/mucous<br>
+       Vaginal fluids<br>
+       Breast milk</p><br><br>
+       <img >
+       </div>
 
-<br><br><h3 class="sTitle">OUR MANDATE</h3>
-       <h2 class="bTitle"> Improve quality of life for those living with & affected by HIV/AIDS
-       Reduce the number of new HIV infections
-       Increase community awareness about HIV/AIDS</h2><br><br>
-       <h3 class="sTitle">WHAT WE OFFER</h3>
-       <p> Practical support, counselling services, and programming to 
-       diverse populations of people living with and affected by issues 
-       related to HIV/AIDS.
-       Education and resources related to safer sex, 
-       HIV acquisition, HIV/AIDS and/or Hep C-related 
-       stigma and discrimination, HIV and Hep C testing, disclosure 
-       (telling people about your HIV/HCV status) among other topics. 
-       Needle and syringe program for injection drug users to  reduce 
-       the transmission of HIV, HCV, and other blood-borne  infections.
-       Strong relationships with people in our communities 
-       such as other community organizations, 
-       people interested in HIV/AIDS & hep C information and 
-       volunteers who help us meet our mission through fundraising.</p>
-  
-
-
-
+      
  </div>
- </div>      
-        
-        
-        
+ </div>  
+ <br><br>
+ <div id="com2p" style="height:400px"> 
+       <img>
+       <h2 class="bTitle">WHAT IS HEPATITIS C?</h2><br>
+       <p>Hepatitis C (Hep C) is a chronic liver disease caused by the Hepatitis C virus (HCV). HCV causes inflammation 
+       and scarring of the liver.</p><br>
+       <p>Hepatitis C is NOT spread through any other bodily fluids such as:<br>
+       saliva<br>
+       sweat<br>
+       semen<br>
+       vaginal fluids<br>
+       urine<br>
+       breast milk, etc.<br>
+       
+       </div>
+<br><br>
+       <div id="com3p" style="height:400px">
+       <h2 class="bTitle">Get Tested</h2><br>
+      <p>At Regional HIV/AIDS Connection,  you can get HIV and Hepatitis C rapid testing done. 
+      Testing is drop-in style, no appointment or health card is required.  
+</p><br>
+<h3>RHAC'S Testing Hours</h3>
+<p>Monday 1:30 – 3:30pm (HIV/Hep C)<br>
+Tuesday 1:30 – 3:30pm (HIV/Hep C) <br>
+Last Wednesday of each month 1:00 – 3:00pm (HIV)<br>
+Every other Friday 1:30 – 3:30pm (Hep C)<br>
+For more information on Hepatitis C rapid test testing visit CATIE.</p><br>
+<p>You can also get tested for Hepatitis C at your family doctor, walk-in clinics or at the London 
+Intercommunity Health Centre if you have no permanent address.<br>
+      
+       </div>
+       <br><br>
+
+        <div id="com4p" style="height:400px">
+        <h2 class="bTitle">WHY IS REGIONAL HIV/AIDS CONNECTION (RHAC) IN YOUR COMMUNITY?</h2>
+     <br> <p>In 2006, an HIV/AIDS community planning report commissioned 
+     by the AIDS Bureau at the Ontario Ministry of Health was 
+     completed using input from people involved in HIV/AIDS 
+     work in London and surrounding counties. 
+     The report highlighted the unique challenges and needs of people 
+     in rural areas and smaller communities living with or 
+     affected by HIV/AIDS. Increased stigma and discrimination, transportation to 
+     HIV-specific medical services and support and 
+     lack of up-to-date HIV education were identified as areas needing attention.</p>
+
+     <br><br><p>
+     </p>
+
+        </div>
+        <br><br>
+        <div id="com5p" style="height:400px">
+        <h2 class="bTitle">Anonymous Testing Near You</h2>
+        <h3>London Intercommunity Health Centre's Options Clinic provides <br>
+        free and anonymous HIV testing at several locations in London. 
+        To book an appointment call <br>(519) 673-4427 or 
+        text Richard (226) 235-1247 or Destini (519) 719-4448. <br>
+        They will respond to you within 24 hours from Monday to Friday.</h3>
         </div>`,
         data(){return {
             price:[{title:'v', subtitle:['subtitle1'],text:['textexte11']},
@@ -153,11 +234,21 @@
     };
 
 
+    let aboutcomponent = {template:`<div>
+        <h2>About US</h2>
+
+
+   
+    </div>`};
+
+
+
 
     //path 映射表
     let routes =[
        {path:'/signup', component:signupcomponent},
        {path:'/home', component:homecomponent},
+       {path:'/community', component:communitycomponent},
        {path:'/about', component:aboutcomponent},
        
 

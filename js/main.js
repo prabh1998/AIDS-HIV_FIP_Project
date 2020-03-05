@@ -6,8 +6,8 @@
     <div class="container">
     <div class="row">
     <div class="col">
-    
-    <img src="images/hand.jpeg" style="width:400px"></div>
+    <img src="images/banner2.jpg" style="width:1100px">
+  <br><br>
           </div>
 <div class="col"> 
         <form action="admin/signned_up_page.php"  method="post">
@@ -34,20 +34,6 @@
 
          data() {return {input: {firstname: "", lastname: "", email:"",country:""}}},
          methods:{
-            // signin(){
-            //     console.log("trying to sign in");
-            //     let formData = new FormData();
-            //     formData.append("firstname", this.input.firstname);
-            //     formData.append("lastname", this.input.lastname);
-            //     formData.append("email", this.input.email);
-            //     formData.append("country", this.input.country);
-
-            //      let url = `./admin/signned_up_page.php`;
-            //      fetch(url, {method: 'POST',body: formData})
-            //      .then(res => res.json())
-            //      .then(data =>{})
-            //      .catch(function(error){console.error(error);}
-            // }
         }
 
 
@@ -57,23 +43,17 @@
     let homecomponent = {template:`<div>
         
         <div id="homeImg">
-        <img src="images/home1.jpg" style="width: 1100px" >
+        <img src="images/banner2.jpg" style="width: 1100px" >
         </div>
 
-       <div id="homeP"> 
-      <hr class="my-4">
-        <p class="lead"></p>
-       
-        </div>
+
 
 <div class="container" >
   <div class="row">
  <div class="col">
 
  <div class="col" id="mapTextB">
-
         <h3>HIV and Youth</h3>
-        <img src="images/logo.svg" style="width: 200px" >
         <br>
         <p id="mapText">Currently, over 30% of all new HIV infections globally are estimated to occur among youth ages 15 to 25 years. Also, increasingly, children infected at birth grow into adolescents who have to deal with their HIV positive status. Combining the two, there are 5 million youth living with HIV.
       <p>
@@ -86,46 +66,49 @@
   <div class="row">
  <div class="col">
             <div class="col" id="mapTextB">
-          <h3>Community Programs</h3>  <p>HIV Programs and Services<br>
+            <div class="detailvo">
+          <h3>Community</h3><br><p>HIV Programs and Services
             PHA & Hep C Activities<br>
             Needle and Syringe Program<br>
             Safe Needle Disposal<br>
-            Carepoint Consumption<br>
-            Open Closet</p>
-            <div class="whitebar" style="height:20px"></div>
-            <br>
-            <p>TOPICS WE CAN SPEAK ABOUT:<br>
+            Carepoint Consumption
+            Open Closet
+            TOPICS WE CAN SPEAK ABOUT:<br>
             HIV/AIDS Basics.<br>
             Hepatitis C Basics<br>
             Harm Reduction</p>
-            <div class="whitebar" style="height:20px"></div>
-            <h3>Events Calendar</h3>
+            <br>
+            <br><br>
+            <h3>Events</h3>
             <p>Couch Crew<br>
             Coffee Drop-In<br>
             PrEP Clinic<br>
-            Opening Celebration</p>
-            <h3>Call Today</h3>
-            <p>9:00AM to 5:00PM<br>
+            Want to join us? Call Today!
+            <br>9:00AM to 5:00PM<br>
             1.866.920.1601<br>
-            Monday to Friday</p>
-            <div class="whitebar" style="height:20px"></div>
-            <div class="whitebar" style="height:20px"></div>
+            Monday to Friday</p><br></div>
+            <br><br></div>
 
-            <div id="volunpart">
+            <div id="volunpart" style="height:700px">
             <h2>OUR VISION - Volunteer</h2>
-            <img src="images/v1.jpg" style="width: 900px">
+            <img src="images/v1.jpg" style="width: 1080px">
+            <div class="detailvo">
             <h3>VOICE</h3><br>
             <p>This work gives voice to both the individuals with HIV/AIDS and Hepatitis C (HCV) who are challenged, as well as to the groups and the communities working actively to improve the quality of life and opportunities for those living with or affected by HIV/AIDS and Hepatitis C (HCV).</p>
             <br><h3>HOME</h3><br>
             <p>RHAC provides a home for people who are living with HIV/AIDS and Hepatitis C (HCV). Home reflects the residential services through the John Gordon Home, which is a Home with a Heart, a special place for people who receive one year of supports in order to stabilize their lives.</p>
-            <br><h3>KNOWLEDGE</h3><br>
-            <P>Knowledge both educates individuals on the risks that people need to be aware of and the actions they need to take to reduce their potential to contract HIV/AIDS and Hepatitis C (HCV), as well as to source and apply practices.</p>
             </div>
+            <div class="detailvo">
+            <br><h3>KNOW</h3><br>
+            <P>Knowledge both educates individuals on the risks that people need to be aware of and the actions they need to take to reduce their potential to contract HIV/AIDS and Hepatitis C (HCV), as well as to source and apply practices.</p>
+            <br><h3>HOPE</h3>
+            <p>Hope is about a world where there will be no new HIV or Hepatitis C (HCV) infections and no further deaths from AIDS. It is about a day where stigma no longer exists. It is about finding a cure!</p>
+            </div></div>
 
             
             
           </div><br><br><br><br>
-          <div class="col" id="videoPart" style="height: 350px">
+          <div class="col" id="videoPart" style="height: 450px">
           <h3>put video here</h3><br><br> 
           </div><br><br>
           <div id="iconp">
@@ -145,30 +128,35 @@
 
 
     let communitycomponent = {template:`<div>
-      <img  >
-      <div id="com1p" style="height:400px">
+    <div id="comhead">
+      <img src="images/banner3.jpg" style="width: 1100px" >
+      <div>
+      <br><br>
+      <div id="com1p" style="height:500px">
 <br><br><h2 class="bTitle">WHAT IS HIV/AIDS?</h2>
-<div class="redbar" style="height:20px"><div>
-       <p>HIV stands for human immunodeficiency virus - a virus that weakens the immune system. The immune systems of people living with HIV may not allow them to fight off infections as well as people who do not have HIV (who are HIV negative).
+
+<br>
+<div id="detailvo1">
+       <p>HIV stands for human immunodeficiency virus - a virus that weakens the immune system.
        AIDS stands for acquired immune deficiency syndrome - an advanced form of the disease caused by HIV. Not all people living with HIV will develop AIDS.
-       HIV is mainly spread by having unprotected anal or vaginal sex (intercourse) or by sharing needles.
-       Currently, there is no vaccine and no cure for HIV/AIDS.
        There are five bodily fluids that can have enough HIV to transmit the virus:
-       <br><br>
+       <br>
        Blood<br>
        Semen<br>
        Anal fluids/mucous<br>
        Vaginal fluids<br>
-       Breast milk</p><br><br>
-       <img >
+       Breast milk</p>
+       <img src="images/test2.jpeg" style="height: 300px">
        </div>
+       
+</div>
 
       
  </div>
  </div>  
  <br><br>
  <div id="com2p" style="height:400px"> 
-       <img>
+       
        <h2 class="bTitle">WHAT IS HEPATITIS C?</h2><br>
        <p>Hepatitis C (Hep C) is a chronic liver disease caused by the Hepatitis C virus (HCV). HCV causes inflammation 
        and scarring of the liver.</p><br>
@@ -178,23 +166,21 @@
        semen<br>
        vaginal fluids<br>
        urine<br>
-       breast milk, etc.<br>
+       breast milk, etc.<br></p>
        
        </div>
 <br><br>
-       <div id="com3p" style="height:400px">
-       <h2 class="bTitle">Get Tested</h2><br>
+       <div id="com3p" style="height:420px">
+       <h2 class="bTitle">Get Tested</h2>
+       <div class="detailvo">
+       <img src="images/test1.jpg" style="height: 300px">
       <p>At Regional HIV/AIDS Connection,  you can get HIV and Hepatitis C rapid testing done. 
-      Testing is drop-in style, no appointment or health card is required.  
-</p><br>
-<h3>RHAC'S Testing Hours</h3>
-<p>Monday 1:30 – 3:30pm (HIV/Hep C)<br>
-Tuesday 1:30 – 3:30pm (HIV/Hep C) <br>
-Last Wednesday of each month 1:00 – 3:00pm (HIV)<br>
-Every other Friday 1:30 – 3:30pm (Hep C)<br>
-For more information on Hepatitis C rapid test testing visit CATIE.</p><br>
-<p>You can also get tested for Hepatitis C at your family doctor, walk-in clinics or at the London 
-Intercommunity Health Centre if you have no permanent address.<br>
+      Testing is drop-in style, no appointment or health card is required.  <br>
+      RHAC'S Testing Hours<br>Monday 1:30 – 3:30pm (HIV/Hep C)<br>
+      Tuesday 1:30 – 3:30pm (HIV/Hep C) <br>
+      Last Wednesday of each month 1:00 – 3:00pm (HIV)<br>
+      Every other Friday 1:30 – 3:30pm (Hep C)<br>For more information on Hepatitis C rapid test testing visit CATIE.
+</p></div><br>
       
        </div>
        <br><br>
@@ -217,12 +203,13 @@ Intercommunity Health Centre if you have no permanent address.<br>
         </div>
         <br><br>
         <div id="com5p" style="height:400px">
-        <h2 class="bTitle">Anonymous Testing Near You</h2>
+        <h2 class="bTitle">Anonymous Testing Near You</h2><div class="detailvo">
         <h3>London Intercommunity Health Centre's Options Clinic provides <br>
         free and anonymous HIV testing at several locations in London. 
         To book an appointment call <br>(519) 673-4427 or 
         text Richard (226) 235-1247 or Destini (519) 719-4448. <br>
         They will respond to you within 24 hours from Monday to Friday.</h3>
+        <img src="images/test.jpg" style="height: 300px"></div>
         </div>`,
         data(){return {
             price:[{title:'v', subtitle:['subtitle1'],text:['textexte11']},

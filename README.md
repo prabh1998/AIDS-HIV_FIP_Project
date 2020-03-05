@@ -7,15 +7,12 @@ Objective of this project is to slope, design and develop a professional adverti
 #Description
 
 A site
+
 Getting Started and Installing
-
-directory for project
-
-cd 
 
 Clone the repo
 
-git clone https://github.com/prabh1998/AIDS-HIV_FIP_Project.git
+ git clone https://github.com/prabh1998/AIDS-HIV_FIP_Project.git
 
 
 
@@ -26,7 +23,7 @@ Install NPM packages
     Import database to MAMP or WAMP from the 'database' folder
     Run Node
 
-npm start
+    npm start
 
 Dependencies
 

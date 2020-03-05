@@ -11,7 +11,61 @@ body{margin: 0; padding: 0;}
 .fade-enter, .fade-leave-active {
     opacity: 0;
 }
+.whitebar{background-color: #ffffff; width: 1280px;margin-left: -20px;}
+#videoPart{background-color: #7d7d7d;}
+#iconp{margin-left: 50px;}
+#iconp img{margin-left: 50px;}
+.redbar{width: 1280px;}
+#com1p{
+    background-color: rgb(207, 236, 247);
+    width: 1080px;
+    text-align: left;
+    margin: 0 auto;
+}
+#com1p p{width: 990px;
+margin: 0 auto;
+margin-left: 30px;}
 
+#com2p{
+    background-color: rgb(186, 226, 240);
+    width: 1080px;
+    text-align: left;
+    margin: 0 auto;
+}
+#com2p p{width: 990px;
+    margin: 0 auto;
+    margin-left: 30px;}
+#com3p{
+    background-color: rgb(151, 205, 225);
+    width: 1080px;
+    text-align: left;
+    margin: 0 auto;
+}
+#com3p p{width: 990px;
+    margin: 0 auto;
+    margin-left: 30px;}
+#com3p h3{
+    text-align: center;
+}
+#com4p{
+    background-color: rgb(108, 159, 177);
+    width: 1080px;
+    text-align: left;
+    margin: 0 auto;
+}
+#com4p p{width: 990px;
+    margin: 0 auto;
+    margin-left: 30px;}
+    #com5p{
+        background-color: rgb(69, 119, 136);
+        width: 1080px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    #com5p h3{width: 990px;
+        margin: 0 auto;
+        margin-left: 30px;
+    margin-top: 20px;}
 
 /*header-----------------*/
 #routerNav{}
@@ -19,7 +73,7 @@ body{margin: 0; padding: 0;}
 
 /*footer-----------------*/
 #footerArea{margin-top: 100px;}
-#footerArea{color:white;height: 160px;background-color:#a8bdce; }
+#footerArea{color:white;height: 160px;background-color:#293239; }
 #socialIcon li img {width: 70px;margin-right: 5px;}
 #socialIcon li{display: inline;}
 #socialIcon li img:hover{opacity: 0.4;}

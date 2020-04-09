@@ -131,7 +131,7 @@
     <div id="comhead">
       <div>
       <br><br>
-      <div id="com1p" style="height:500px">
+      <div id="com1p" >
 <br><br><h2 class="bTitle">WHAT IS HIV/AIDS?</h2>
 
 <br>
@@ -154,7 +154,7 @@
 </div>
 </div>  
 <br><br>
-<div id="com2p" style="height:400px"> 
+<div id="com2p" > 
 <h2 class="bTitle">WHAT IS HEPATITIS C?</h2>
       <div class="detailvo">
       <p><br><br>Hepatitis C (Hep C) is a chronic liver <br>
@@ -177,10 +177,10 @@
       </div>
 <br><br>
 
-      <div class="com3p" style="height:420px">
+      <div class="com3p">
       <h2 class="bTitle">Get Tested</h2>
       <div class="detailvo">
-      <img src="images/test1.jpg" style="height: 300px">
+      <img src="images/test1.jpg">
       <p>At Regional HIV/AIDS Connection,  you can get HIV and Hepatitis C rapid testing done. 
       Testing is drop-in style, no appointment or health card is required.  <br>
       RHAC'S Testing Hours<br>Monday 1:30 – 3:30pm (HIV/Hep C)<br>
@@ -191,7 +191,7 @@
       
       </div>
       <br><br>
-      <div class="com3p1" style="height:420px">
+      <div class="com3p1" >
       <h2 class="bTitle">WHY IS REGIONAL HIV/AIDS CONNECTION (RHAC) IN YOUR COMMUNITY?</h2>
       <div class="detailvo">
       
@@ -204,7 +204,7 @@
         </div>
       
         <br><br>
-        <div id="com5p" style="height:300px"><p>
+        <div id="com5p" ><p>
         <br>London Intercommunity Health Centre's Options Clinic provides <br>
         free and anonymous HIV testing at several locations in London. <br>
         To book an appointment call (519) 673-4427 or <br>
@@ -251,8 +251,8 @@
         or at risk for, HIV and HCV. All services are<br> free and confidential.<p>
         </div>
       <br>
-        <div id="homeImg">
-        <img src="images/a4.jpeg" style="width: 1100px" ></div>
+        <div class="banner">
+        <img src="images/a4.jpeg" ></div>
         <div id="aboutp3">
         <img src="images/a1.png" style="width: 300px" >
         <img src="images/a2.png" style="width: 300px" >

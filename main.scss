@@ -12,6 +12,25 @@ body{
             margin: 0 auto;
         }
     }
+    .com3p{
+        background-color: #facc32;
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        h2{
+            color: white;
+        }
+        img{
+            width: 400px;
+            text-align: center;
+        }
+        p{
+            width: 450px;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+        }
+    }
     #mapTextB{top:0px; left:0px; background-color: #f2cb05;}
     #mapTextB h3{color: #ffffff; font-size: 28px; text-align: center;width: 450px;}
     #mapTextB p{color: #fff5f5; font-size: 20px; width: 450px;}

@@ -13,6 +13,25 @@ body .banner img {
   text-align: center;
   margin: 0 auto;
 }
+body .com3p {
+  background-color: #facc32;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+body .com3p h2 {
+  color: white;
+}
+body .com3p img {
+  width: 400px;
+  text-align: center;
+}
+body .com3p p {
+  width: 450px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
 body #mapTextB {
   top: 0px;
   left: 0px;

@@ -6,8 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 function signUp($firstName, $lastName, $password, $email, $country, $date){
-    //Debug
-    // $message = sprintf('You are trying to login with username %s and password %s', $username, $password);
+    
 
     $pdo = Database::getInstance()->getConnection();
     $message_signUp = '';
@@ -15,7 +14,7 @@ function signUp($firstName, $lastName, $password, $email, $country, $date){
     date_default_timezone_set('America/Toronto');
     $date = date('Y-m-d H:i:s');
 
-    // check user existance
+    // check user exist or not
     $check_email_query = 'SELECT COUNT(user_email) AS num FROM tbl_user WHERE user_email = :email'; 
     $user_set = $pdo->prepare($check_email_query);
     $user_set->execute(

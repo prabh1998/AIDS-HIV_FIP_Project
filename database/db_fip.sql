@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 28, 2020 at 06:06 AM
--- Server version: 10.4.10-MariaDB
+-- Generation Time: Apr 10, 2020 at 02:26 AM
+-- Server version: 10.3.20-MariaDB
 -- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -41,14 +41,14 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `start_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `last_updated` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`user_id`, `first_name`, `last_name`, `user_email`, `user_password`, `user_country`, `user_ip`, `hash`, `start_date`, `last_updated`) VALUES
-(1, 'Prabhjot', 'Kaur', 'prabhjotkaur7449@gmail.com', 'Golgappa1@', 'canada', '', '', '2020-02-28 03:12:02', '2020-02-28 03:12:02');
+(2, 'Sagecom ', 'Champ', 'sagecom2020@gmail.com', 'sag2020@', '', '', '', '2020-04-10 02:25:44', '0000-00-00 00:00:00');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

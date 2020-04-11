@@ -59,7 +59,7 @@ Credits/Tools
 
 License
 
-MIT
+ MIT
 
 Acknowledgments
 
@@ -68,3 +68,8 @@ Acknowledgments
     Meyerweb CSS Reset
     MySQL Connection Pooling
     Trevor Van Rys
+    Banglanfeng Pan 
+    
+** Login Testing **
+Username - sagecom2020@gmail.com
+Password - sag2020@

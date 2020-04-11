@@ -25,9 +25,10 @@
 
   <div id="routerNav">
 <router-link to='/home'  tag='button' class="btn btn-light">Home</router-link>
-<router-link to='/signup' tag='button' class="btn btn-light">Sign Up</router-link>
+<router-link to='../sign-up.php' tag='button' class="btn btn-light">Sign Up</router-link>
 <router-link to='/video' tag='button' class="btn btn-light">Video</router-link>
 <router-link to='/about' tag='button' class="btn btn-light">about</router-link>
+<router-link to='/login' tag='button' class="btn btn-light">login</router-link>
 	
 </div>
 </nav>

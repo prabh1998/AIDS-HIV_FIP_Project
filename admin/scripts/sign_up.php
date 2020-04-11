@@ -1,4 +1,5 @@
 <?php 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -37,13 +38,13 @@ function signUp($firstName, $lastName, $password, $email, $country, $date){
         $mail->Port = 465;
         $mail->SMTPAuth=true;
 
-        $mail->Username='prabhjotkaur7449@gmail.com';
-        $mail->Password='Golgappa1@'; // please dont steal my password. I really dont want to change it
+        $mail->Username='sagecom2020@gmail.com';
+        $mail->Password='sag2020@'; // Username password for testing  login
 
         
 
         $mail->addAddress($email);
-        $mail->setFrom('prabhjotkaur7449@gmail.com');
+        $mail->setFrom('sagecom2020@gmail.com');
         
         
         

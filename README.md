@@ -1,22 +1,20 @@
-#AIDS-HIV_FIP_PROJECT
+# AIDS-HIV_FIP_PROJECT
 
-#Objective of Assignment
+# Objective of Assignment
 
 Objective of this project is to slope, design and develop a professional advertising campaign and website for the Regional HIV/Aids Connection by targeting young generation.
 
-#Description
+# Description
 
-A site
-
-Getting Started and Installing
-
-Clone the repo
-
- git clone https://github.com/prabh1998/AIDS-HIV_FIP_Project.git
+ Getting Started and Installing
+ 
+  cd directory
+  Clone the repo
+  git clone https://github.com/prabh1998/AIDS-HIV_FIP_Project.git
 
 
 
-Install NPM packages
+# Install NPM packages
 
   npm install
 
@@ -25,7 +23,7 @@ Install NPM packages
 
     npm start
 
-Dependencies
+# Dependencies
 
     HTML5
     CSS3
@@ -34,18 +32,18 @@ Dependencies
     JavaScript
     Express
 
-Installing
+# Installing
 
     cd to the directory of your choice and hack away!
 
-Group Members
+# Group Members
 
     **Kaur Prabhjot
     ** Mengyang Li
     **Yibing Ouyang
     **Yuchen Xia
 
-Credits/Tools
+# Credits/Tools
 
     Adobe XD
     Adobe Photoshop
@@ -56,12 +54,13 @@ Credits/Tools
     Node.js
     Express
     MySQL
+    Vue.js
+    Php
 
-License
+# License
+  MIT
 
- MIT
-
-Acknowledgments
+# Acknowledgments
 
     awesome-readme
     README Formatting

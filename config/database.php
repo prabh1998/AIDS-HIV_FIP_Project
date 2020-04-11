@@ -3,7 +3,7 @@
 <?php
 class Database
 {
-    // Note: specify your own database credentials
+    // Note: specify your own database credentials here
     private $host = "localhost";
 
     private $db_name = "db_fip";

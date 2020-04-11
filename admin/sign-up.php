@@ -8,7 +8,7 @@ if(isset($_POST['signUp'])){
     $lastName = trim($_POST['last_name']);
     $password = trim($_POST['user_password']);
     $email = trim($_POST['user_email']);
-    // $country = trim($_POST['user_country']);
+    $country = trim($_POST['user_country']);
     $date = date('Y-m-d H:i:s');
 
     if(!empty($firstName) && !empty($lastName) && !empty($password) && !empty($email) && !empty($country)){

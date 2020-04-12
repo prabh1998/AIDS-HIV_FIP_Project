@@ -1,60 +1,69 @@
 <?php 
 
-function login($email, $password){
-    
-// Login with the email and password you filled during sign-up
+function login($username, $password, $ip){
+    //Debug
+    // $message = sprintf('You are trying to login with username %s and password %s', $username, $password);
+
     $pdo = Database::getInstance()->getConnection();
-    $message_login = '';
-    //timezone config
-    date_default_timezone_set('America/Toronto');
 
     // check user existance
-    $check_exist_query = 'SELECT COUNT(*) FROM tbl_user WHERE user_email= :email'; 
+    $check_exist_query = 'SELECT COUNT(*) FROM tbl_admins WHERE username= :username'; // sanitation
     $user_set = $pdo->prepare($check_exist_query);
-    $user_set->execute(
+    $user_set->execute( // sanitation pt2
         array(
-            ':email'=>$email
+            ':username' => $username,
         )
     );
 
-
     if($user_set->fetchColumn()>0){
-        //user exists
-        $get_user_query = 'SELECT * FROM tbl_user WHERE user_email = :email AND user_password = :password';
+        //encrypt password
+        $passEncryp = md5($password);
+
+        //user exist
+        $get_user_query = 'SELECT * FROM tbl_admins WHERE username = :username AND password = :password';
         $user_check = $pdo->prepare($get_user_query);
         $user_check->execute(
             array(
-                ':email'=>$email,
-                ':password'=>$password
+                ':username'=>$username,
+                ':password'=>$passEncryp
             )
         );
-
     while($found_user = $user_check->fetch(PDO::FETCH_ASSOC)){
-        $id = $found_user['user_id'];
-        $hash = $found_user['hash'];
-        $date = date('Y-m-d H:i:s');
+        $id = $found_user['id'];
 
-        // login successfully done
-        $message_login = 'Login Successful!';
+        // login successful
+        $message = 'logged in successfully!';
+        $_SESSION['id'] = $id;
+        $_SESSION['name'] = $found_user['name'];
         // updating database
-        $update_query = 'UPDATE tbl_user SET last_updated = :date WHERE user_id = :id';
+        $update_query = 'UPDATE tbl_admins SET ip = :ip WHERE id = :id';
         $update_set = $pdo->prepare($update_query);
         $update_set->execute(
-            array(
-                ':date'=>$date,
-                ':id'=>$id
-            )
+                array(
+                    ':ip'=>$ip,
+                    ':id'=>$id
+                )
+
         );
     }
 
     if(isset($id)){
-        redirect_to("../index.php?email=$email hash=$hash");
+        redirect_to('index.php');
     }
 
     }else{
         //user doesn't exit
-        $message_login = 'user doesnot exist';
+        return 'user doesnt exist';
     }
+}
 
-    return $message_login;
+function confirm_logged_in(){
+    if(!isset($_SESSION['id'])){
+        redirect_to('admin_login.php');
+    }
+}
+
+function logout(){
+    session_destroy();
+    redirect_to('admin_login.php');
 }

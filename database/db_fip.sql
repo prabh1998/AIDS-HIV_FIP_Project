@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 10, 2020 at 02:26 AM
+-- Generation Time: Apr 12, 2020 at 03:06 PM
 -- Server version: 10.3.20-MariaDB
 -- PHP Version: 7.3.12
 
@@ -25,30 +25,67 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_admins`
+--
+
+DROP TABLE IF EXISTS `tbl_admins`;
+CREATE TABLE IF NOT EXISTS `tbl_admins` (
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `username` varchar(42) NOT NULL,
+  `name` varchar(42) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `ip` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_admins`
+--
+
+INSERT INTO `tbl_admins` (`id`, `username`, `name`, `email`, `password`, `ip`) VALUES
+(1, 'sagecom', 'aidshiv', 'test@gmail.com', 'pass', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_content`
+--
+
+DROP TABLE IF EXISTS `tbl_content`;
+CREATE TABLE IF NOT EXISTS `tbl_content` (
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `sub_title` varchar(100) NOT NULL,
+  `image` varchar(65) NOT NULL,
+  `author` varchar(42) NOT NULL,
+  `text` text NOT NULL,
+  `date` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_user`
 --
 
 DROP TABLE IF EXISTS `tbl_user`;
 CREATE TABLE IF NOT EXISTS `tbl_user` (
-  `user_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(200) NOT NULL,
-  `last_name` varchar(250) NOT NULL,
-  `user_email` varchar(250) NOT NULL,
-  `user_password` varchar(250) NOT NULL,
-  `user_country` varchar(200) NOT NULL,
-  `user_ip` varchar(100) NOT NULL,
-  `hash` varchar(50) NOT NULL,
-  `start_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `last_updated` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `name` varchar(42) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `phone` varchar(16) NOT NULL,
+  `ip` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `first_name`, `last_name`, `user_email`, `user_password`, `user_country`, `user_ip`, `hash`, `start_date`, `last_updated`) VALUES
-(2, 'Sagecom ', 'Champ', 'sagecom2020@gmail.com', 'sag2020@', '', '', '', '2020-04-10 02:25:44', '0000-00-00 00:00:00');
+INSERT INTO `tbl_user` (`id`, `name`, `email`, `phone`, `ip`) VALUES
+(1, 'Prabhjot', 'prabhjotkaur7449@gmail.com', '000-000-000', '1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

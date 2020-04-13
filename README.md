@@ -35,6 +35,11 @@ Objective of this project is to slope, design and develop a professional adverti
 # Installing
 
     cd to the directory of your choice and hack away!
+    
+# Login Test 
+    
+    username - sagecom
+    password - sag2020@
 
 # Group Members
 
